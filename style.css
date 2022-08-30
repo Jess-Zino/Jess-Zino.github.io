@@ -17,7 +17,7 @@ body{
     min-height: 100vh;
     font-family: "poppins";
     background: url("bg.jpg");
-    background-position: center;
+    background-position:bottom;
     background-size: cover;
 
 }
@@ -25,11 +25,11 @@ body{
     position:relative;
     width:340px;
     padding :20px;
-    background-color: var(--calcol);
+    background-color: transparent;
     border-radius: 20px;
 
     border: 3px solid var(--display);
- /*   box-shadow: 15px 15px 20px rgba(0,0,0,0.1), -15px -15px 20px rgba(245, 245, 245, 0.733);*/
+   box-shadow: inset 15px 15px 20px rgba(0,0,0,0.1), inset -15px -15px 20px rgba(245, 245, 245, 0.733);
 }
     
 .btn{
@@ -48,8 +48,11 @@ body{
     height: 100px;
     border-radius: 10px;
     margin-bottom: 12px;
-    background-color: var(--display);
-    color: white;
+    background-color:transparent;
+    border: 3px inset var(--display);
+    color: black;
+    box-shadow: inset 15px 15px 20px rgba(0,0,0,0.1), inset -15px -15px 20px rgba(245, 245, 245, 0.733);
+
     padding: 0 20px;
     font-size: 20pt;
     font-weight: 700;
