@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+
+}
+:root{
+   --btncol:#D4D4D2;
+   --signcol:#FF9500;
+   --display:#131200;
+   --calcol:#505050;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "poppins";
+    background: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.container{
+    position:relative;
+    width:340px;
+    padding :20px;
+    background-color: var(--calcol);
+    border-radius: 20px;
+
+    border: 3px solid var(--display);
+ /*   box-shadow: 15px 15px 20px rgba(0,0,0,0.1), -15px -15px 20px rgba(245, 245, 245, 0.733);*/
+}
+    
+.btn{
+    position: relative;
+    display: grid;
+  
+}
+.btn #value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    line-height: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background-color: var(--display);
+    color: white;
+    padding: 0 20px;
+    font-size: 20pt;
+    font-weight: 700;
+    content: " ";
+}
+.btn span:hover{
+    background: #FF9500;
+}
+.btn span {
+    position: relative;
+    padding: 20px;
+    user-select: none;
+    cursor: pointer;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 10px;
+   margin: 5px;
+    border: 1px solid black;
+    font-size: 13pt;
+    font-weight: 400;
+    background-color: var(--btncol);
+}
+#clear {
+    grid-column: span 2;
+    background: red;
+}
+.add{
+    grid-row: span 2;
+   
+}
+.btn .sign:hover{
+    background-color: var(--btncol);
+}
+.btn .sign{
+    background: #FF9500;
+}
+#equals{
+    background-color: green;
+}
